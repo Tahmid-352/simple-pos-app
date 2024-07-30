@@ -1,0 +1,83 @@
+/* General container styling */
+.order-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Header styling */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Total sales display styling */
+.total-sales {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.total-sales h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+/* Orders list styling */
+.orders-list {
+  margin-top: 20px;
+}
+
+.orders-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.orders-list li {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.order-item {
+  flex: 1;
+}
+
+.order-item div {
+  margin-right: 15px;
+}
+
+.order-item button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.order-item button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .orders-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-item button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
