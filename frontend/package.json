@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "proxy": "https://tahmid-pos-app.onrender.com"
+    "proxy": "https://simple-pos-app.onrender.com"
   },
   "eslintConfig": {
     "extends": [
