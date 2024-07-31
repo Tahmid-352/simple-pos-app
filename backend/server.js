@@ -41,12 +41,14 @@ app.post('/orders', async (req, res) => {
 // Get Orders
 app.get('/orders', async (req, res) => {
   try {
-    const orders = await Order.find();
+    // Fetch and sort orders by 'createdAt' in descending order
+    const orders = await Order.find().sort({ createdAt: -1 });
     res.json(orders);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
+
 
 // Calculate total sales
 app.get('/total-sales', async (req, res) => {
